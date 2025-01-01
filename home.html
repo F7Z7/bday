@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEHE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #e6ffe6;
+
+        }
+
+        a {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        a:hover {
+            background: #218838;
+            cursor: pointer;
+        }
+        .class{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 250px;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="class">
+    <a id="button" onclick="ayyoPattiche(this);" target="_blank">CLICK HERE 😁</a>
+    <div id="message"></div><!-- Replace with your target HTML file -->
+</div>
+</body>
+<script>
+    let noClicks = 0
+
+    function ayyoPattiche(element) {
+        noClicks++;
+        if (noClicks === 1) {
+            document.body.style.background ="linear-gradient(to right, #ff758c, #ff7eb3)";
+
+
+
+            element.style.visibility = 'hidden'
+            setTimeout(() => {
+                element.style.visibility = 'visible'
+                element.innerText = "Onnude Nokk 🎀";
+                element.style.backgroundColor = "#FF00FF";
+
+
+            }, 3000);
+            const message = document.getElementById("message");
+            message.innerText = "Ayye pattiche Vere panik poyikode ninak 😂";
+            message.style.fontSize = "30px";
+        } else if (noClicks === 2) {
+            window.open("bday.html", "_blank")
+        }
+    }
+</script>
+
+</html>

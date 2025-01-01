@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HAPPY BDAY LIYANA</title>
+    <link rel="stylesheet" href="bday.css">
+</head>
+<body>
+<div class="headings">
+    <h1>HAPPY LATE BIRTHDAY WISHES LIYANA</h1>
+    <h2>Swalpam late aayi,enthanelum late aaylum latest aayit aakum 😁</h2>
+    <h3>Enne kond pattune pole oru small item(gift) for you</h3>
+</div>
+
+<div class="boxes">
+    <div class="box2">
+        <img src='img_2.png' style="width:100%" alt="liyanapic">
+    </div>
+    <div class="box3">
+        <img src='img_4.png' style="width:100%" alt="liyanapic">
+    </div>
+    <div class="box4">
+        <img src='img_3.png' style="width:100%" alt="liyanapic">
+    </div>
+    <div class="box5">
+        <img src='img_6.png' style="width:100%" alt="liyanapic">
+    </div>
+    <div class="box6">
+        <img src='img_5.png' style="width:100%" alt="liyanapic">
+    </div>
+    <div class="box7">
+        <img src='img_7.png' style="width:100%" alt="liyanapic">
+    </div>
+</div>
+
+<footer>
+    <p>Made by F7Z</p>
+</footer>
+<script>
+    let boxes = document.querySelector(".boxes"); // Select the first element with the class 'boxes'
+
+    window.addEventListener("scroll", () => {
+        // Check if the element is in the viewport
+        const rect = boxes.getBoundingClientRect();
+        if (rect.top <= window.innerHeight) {
+            boxes.style.visibility = "visible"; // Make boxes visible
+            boxes.style.opacity = "1"; // Fade in boxes
+        }
+    });
+
+</script>
+</body>
+</html>
